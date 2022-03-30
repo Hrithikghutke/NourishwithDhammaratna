@@ -47,12 +47,12 @@ function Header(props) {
         <li>
           <Link to="/comingsoon">Plans</Link>
         </li>
-        <li>
-          <Link to="/blogs">Blogs</Link>
+        {/* <li>
+          <Link to="/comingsoon">Blogs</Link>
         </li>
         <li>
           <Link to="/comingsoon">Login</Link>
-        </li>
+        </li> */}
       </ul>
       <ul className="header_social">
         <li>
@@ -61,7 +61,7 @@ function Header(props) {
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="https://www.facebook.com/archana.ghutke.7">
             <RiFacebookCircleLine />
           </a>
         </li>

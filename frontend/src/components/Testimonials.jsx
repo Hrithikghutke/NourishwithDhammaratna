@@ -18,15 +18,22 @@ function Testimonials(props) {
           <img src={props.timg1} alt="img1" />
           <div className="myCarousel">
             <h3>{props.name1}</h3>
-            <h4>Designer</h4>
+            <h4></h4>
             <p>
-              It's freeing to be able to catch up on customized news and not be
-              distracted by a social media element on the same site
+              I have always known that healthy eating is essential for overall
+              long term health, but it has been with your instructions that I
+              have committed myself to proper nutrition and it’s working! After
+              following your plan, I am more productive, have more energy at
+              work, and have learned not only what to eat, why and when, but
+              also easy strategies to keep it up. My commitment to long term
+              health has never been better or more fun. Thanks to dear friend
+              Ratna for sharing your expertise and putting me on the path to a
+              healthy life.
             </p>
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <img src={props.timg2} alt="img2" />
           <div className="myCarousel">
             <h3>{props.name2}</h3>
@@ -48,7 +55,7 @@ function Testimonials(props) {
               I'm on the go!
             </p>
           </div>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

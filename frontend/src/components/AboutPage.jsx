@@ -40,15 +40,15 @@ function AboutPage() {
             </div>
           </div>
           <div className="social">
-            <Link to="/">
+            <a href="https://www.facebook.com/archana.ghutke.7">
               <i className="fab fa-facebook-f"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="/">
               <i className="fab fa-twitter"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://instagram.com/nourishwithdhammaratna?utm_medium=copy_link">
               <i className="fab fa-instagram"></i>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="col-12 col-md-6 rp-container">

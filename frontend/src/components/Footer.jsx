@@ -20,7 +20,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://www.facebook.com/archana.ghutke.7">
                 <RiFacebookCircleLine />
               </a>
             </li>
@@ -46,7 +46,7 @@ function Footer() {
 
           <ul>
             <li>
-              <Link to="/blogs">Nutritions</Link>
+              <Link to="/currentlyUnavaliable">Nutritions</Link>
             </li>
             <li>
               <Link to="/currentlyUnavaliable">Promotions</Link>

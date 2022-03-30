@@ -18,6 +18,7 @@ import ComingsoonPage from "./components/ComingsoonPage";
 import CurrentlyUnavaliable from "./components/CurrentlyUnavaliable";
 import Blog from "./components/Blog/Blog";
 import SinglePost from "./components/Blog/SinglePost";
+import TestimonialImg1 from "./images/testimonials_1.jpeg";
 function App() {
   return (
     <Router>
@@ -34,10 +35,10 @@ function App() {
               Helloimg="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
             />,
             <Testimonials
-              timg1="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+              timg1={TestimonialImg1}
               timg2="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
               timg3="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-              name1="Hrithik Ghutke"
+              name1="Amol Dhakne"
               name2="Shubham Ghutke"
               name3="Ricky Ghutke"
             />,
