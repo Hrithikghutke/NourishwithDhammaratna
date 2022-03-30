@@ -1,0 +1,165 @@
+@import "./config";
+
+.lp-container,
+.rp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 40px 10px 40px;
+}
+
+.title h1 {
+  font-family: "lobster";
+  color: $darkGray;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.content p {
+  font-family: $Mukta;
+
+  text-align: center;
+  color: $gray;
+}
+.socials {
+  padding: 10px;
+}
+.socials h4 {
+  background-color: $black;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-family: $Mukta;
+  color: $white;
+}
+
+.fab {
+  padding: 10px;
+  color: $black;
+  font-size: 18px;
+}
+
+.fab:hover {
+  color: red;
+  transition: all 0.3s ease-in-out;
+}
+
+.rp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rp-container img {
+  width: 80%;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.about-k11-image {
+  width: 80%;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.about-points-row {
+  padding: 30px;
+}
+
+.about-points-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-points-container h4 {
+  font-family: "Lobster";
+  font-weight: 200;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.about-points-container ul {
+  list-style: circle;
+  padding: 5px 15px 5px 15px;
+}
+
+.about-points-container ul li {
+  font-family: $Mukta;
+  color: $gray;
+  padding: 2px 0px 2px 0px;
+}
+
+.about-points2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-points2-container h4 {
+  font-family: "Lobster";
+  font-weight: 200;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.about-points2-container ul {
+  list-style: circle;
+  padding: 5px 15px 5px 40px;
+}
+
+.about-points2-container ul li {
+  font-family: $Mukta;
+  color: $gray;
+  padding: 2px 0px 2px 0px;
+}
+
+.about-points2-container h5 {
+  font-family: "Lobster";
+  font-weight: 200;
+  color: $darkGray;
+  padding: 10px 0px 10px 0px;
+}
+
+.about-plans-btn {
+  text-align: center;
+  background-color: $black;
+  color: $white;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 6px;
+  font-family: $Mukta;
+  font-size: 17px;
+  width: 50%;
+}
+
+.about-plans-btn:hover {
+  background-color: $transparentBlack;
+  color: $white;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rp-container {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .about-plans-btn {
+    width: 70%;
+  }
+
+  .about-points2-container ul {
+    list-style: circle;
+    padding: 5px 15px 5px 15px;
+  }
+}

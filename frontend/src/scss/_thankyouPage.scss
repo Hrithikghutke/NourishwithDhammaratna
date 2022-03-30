@@ -1,0 +1,21 @@
+@import "./config";
+
+.ty-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ty-container h1 {
+  font-weight: 800;
+  font-family: $Mukta;
+  font-size: 4rem;
+}
+
+.ty-container p {
+  font-family: $Mukta;
+  font-weight: 400;
+  font-size: 1.2rem;
+}

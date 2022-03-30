@@ -1,0 +1,36 @@
+@import "./config";
+
+.cu-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cu-container h1 {
+  font-weight: 800;
+  font-family: $Mukta;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.cu-container p {
+  font-family: $Mukta;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .cu-container h1 {
+    font-weight: 800;
+    font-family: $Mukta;
+    font-size: 2.5rem;
+  }
+
+  .cu-container p {
+    text-align: center;
+    padding: 5px 30px 10px 30px;
+    font-size: 1rem;
+  }
+}

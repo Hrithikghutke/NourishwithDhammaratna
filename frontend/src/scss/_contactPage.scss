@@ -1,0 +1,42 @@
+@import "./config";
+
+.address-container,
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.address-container h3,
+.contact-container h3 {
+  font-family: $Mukta;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: $darkGray;
+}
+
+.address-container p,
+.contact-container p {
+  font-family: $Mukta;
+  font-size: 16px;
+  color: $gray;
+  padding: 5px 20px 5px 20px;
+}
+
+.ca-container {
+  padding: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .address-container h3,
+  .contact-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .address-container p,
+  .contact-container p {
+    text-align: start;
+    font-size: 13px;
+  }
+}

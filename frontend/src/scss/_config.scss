@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+@font-face {
+  font-family: "Safiar Signature";
+  src: local("Safiar Signature"),
+    url("https://drive.google.com/file/d/1aLC_x4dnfsLKwW8CJJ-QWad6a3ZhUc_J/view?usp=sharing")
+      format("ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap");
+$Mukta: "Mukta", sans-serif;
+$Roboto: "Roboto", sans-serif;
+
+$white: #ffff;
+$offwhite: rgb(250, 250, 250);
+$black: rgb(0, 0, 0);
+$gray: gray;
+$scrollbar: rgb(49, 49, 49);
+$grayHover: rgb(0, 0, 0);
+$darkGray: rgb(75, 75, 75);
+$veryLightGray: rgb(228, 228, 228);
+$copyrightgray: rgb(29, 29, 29);
+$purpleAccent: #836da0;
+$purpleAccentHover: rgb(108, 80, 146);
+$transparentBlack: rgba(12, 12, 12, 0.623);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

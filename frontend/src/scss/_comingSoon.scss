@@ -1,0 +1,35 @@
+@import "./config";
+
+.cs-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cs-container h1 {
+  font-weight: 800;
+  font-family: $Mukta;
+  font-size: 4rem;
+}
+
+.cs-container p {
+  font-family: $Mukta;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .cs-container h1 {
+    font-weight: 800;
+    font-family: $Mukta;
+    font-size: 3rem;
+  }
+
+  .cs-container p {
+    text-align: center;
+    padding: 5px 30px 10px 30px;
+    font-size: 1rem;
+  }
+}

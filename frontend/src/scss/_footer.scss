@@ -1,0 +1,105 @@
+@import "./config";
+/*-------------------------------------- Footer --------------------------------------------------------*/
+.footer {
+  background-color: $grayHover;
+  min-height: 20vh;
+}
+
+.footer p {
+  color: $gray;
+}
+
+.footer-row {
+  min-height: 20vh;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer-logo-container h3 {
+  font-family: "Lobster", cursive;
+  // font-family: Safiar Signature;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 10px;
+  cursor: pointer;
+  color: $veryLightGray;
+}
+
+.footer-logo-container p {
+  font-family: $Roboto;
+  font-size: 12px;
+  color: $gray;
+  margin: -10px;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer-links-container ul {
+  list-style: none;
+}
+
+.footer-links-container li a {
+  text-decoration: none;
+  color: $gray;
+  font-family: $Roboto;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-links-container li a:hover {
+  color: $veryLightGray;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: $copyrightgray;
+}
+
+.copyright-container p {
+  font-family: $Roboto;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: space-between;
+  width: 9vh;
+  padding: 10px 0px 10px 0px;
+}
+.footer_social li a {
+  color: $white;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer_social li a:hover {
+  color: $gray;
+}
+
+.footer-whatsapp-logo {
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .copyright-container p {
+    font-size: 10px;
+  }
+}

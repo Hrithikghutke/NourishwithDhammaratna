@@ -1,0 +1,180 @@
+@import "./config";
+
+/*--------------------------------------- Landing Page --------------------------------------------------*/
+
+.lp-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -10;
+}
+
+.landingpage {
+  min-height: 80vh;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vh 12vh 12vh 12vh;
+  animation: fadein ease-in-out 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.welcome-container h2 {
+  font-size: 30px;
+  font-family: $Mukta;
+  font-weight: 800;
+  color: $darkGray;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.welcome-container h2 span {
+  //font-family: Safiar Signature;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+  font-weight: 300;
+  color: $darkGray;
+  letter-spacing: 0px;
+  width: 100%;
+  text-align: center;
+  background: url(../images/brush-stroke.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+.welcome-container p {
+  font-family: $Roboto;
+  font-size: 14px;
+  color: $gray;
+  z-index: 1;
+}
+
+.hero-img1,
+.hero-img2,
+.hero-img3 {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  animation-name: fadein;
+  animation-delay: 1500ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.hero-img1 img,
+.hero-img2 img,
+.hero-img3 img {
+  width: 100%;
+  height: 40vh;
+  padding: 10px;
+}
+
+.hello-img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  animation-name: fadein;
+  animation-delay: 2500ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.hello-container {
+  margin-bottom: 50px;
+}
+
+.hello-img img {
+  height: 80vh;
+  width: 100%;
+}
+
+.hello-content-container {
+  padding: 60px;
+}
+
+.hello-content-container h3 {
+  font-family: $Mukta;
+  font-weight: 800;
+  color: $darkGray;
+  font-size: 45px;
+  margin-bottom: 3px;
+  animation-name: fadein;
+  animation-delay: 3000ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.hello-content-container p {
+  font-family: $Roboto;
+  color: $gray;
+  animation-name: fadein;
+  animation-delay: 3200ms;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-img1,
+  .hero-img2,
+  .hero-img3 {
+    display: none;
+  }
+
+  .welcome-container p {
+    text-align: center;
+  }
+
+  .welcome-container {
+    padding: 5vh 0vh 12vh 0vh;
+  }
+
+  .welcome-container h2 {
+    font-size: 25px;
+    font-family: $Mukta;
+    font-weight: 800;
+    color: $darkGray;
+    width: 100%;
+    text-align: center;
+  }
+
+  .welcome-container h2 span {
+    //font-family: Safiar Signature;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 100%;
+    background-size: 50%;
+  }
+
+  .welcome-container p {
+    font-size: 12px;
+  }
+
+  .hello-content-container {
+    padding: 60px 20px 60px 20px;
+  }
+}
