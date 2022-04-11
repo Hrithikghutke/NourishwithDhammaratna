@@ -47,12 +47,12 @@ function Header(props) {
         <li>
           <Link to="/comingsoon">Plans</Link>
         </li>
-        {/* <li>
+        <li>
           <Link to="/comingsoon">Blogs</Link>
         </li>
         <li>
           <Link to="/comingsoon">Login</Link>
-        </li> */}
+        </li>
       </ul>
       <ul className="header_social">
         <li>
