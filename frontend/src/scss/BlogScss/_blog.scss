@@ -31,7 +31,25 @@
 
 .categories_container {
   padding: 20px;
-  & > :first-child {
+
+  & > * {
+    & > button {
+      font-family: $Mukta;
+      border: none;
+      width: 100%;
+      padding: 8px;
+      margin: 0px 0px 10px 0px;
+      background-color: $black;
+      color: $white;
+      border-radius: 6px;
+      transition: all 0.3s ease-in-out;
+    }
+    & > button:hover {
+      background-color: $darkGray;
+    }
+  }
+
+  & > h1 {
     font-family: $Mukta;
     font-size: 2.5rem;
     font-weight: 700;

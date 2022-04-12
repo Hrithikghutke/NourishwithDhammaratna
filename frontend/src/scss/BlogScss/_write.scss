@@ -1,0 +1,116 @@
+@import "../config";
+
+.write-container {
+  & > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & > .add-img-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      height: 50vh;
+      background: url("../../images/Blog/blog_bg.jpg");
+      background-position: center;
+
+      & > input {
+        display: none;
+      }
+
+      & > label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        border-radius: 6px;
+        padding: 5px 15px 5px 15px;
+        transition: all 0.3s ease-in-out;
+        & > * {
+          font-size: 40px;
+          cursor: pointer;
+          padding: 2px;
+          margin-right: 15px;
+        }
+        & > p {
+          font-family: $Mukta;
+          color: $black;
+          font-weight: 700;
+          letter-spacing: 3px;
+        }
+      }
+      & > label:hover {
+        background-color: $veryLightGray;
+      }
+    }
+    & > .content-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      & > input {
+        margin: 10px;
+        width: 50%;
+        font-size: 2rem;
+        padding: 10px 10px 10px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-family: $Mukta;
+        background-color: $offwhite;
+        text-align: center;
+        border: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      & > input:focus {
+        outline: none;
+      }
+
+      & > input:hover {
+        background-color: $veryLightGray;
+      }
+
+      & > textarea {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+        background-color: $offwhite;
+        border-radius: 6px;
+        border: none;
+        font-family: $Mukta;
+        letter-spacing: 2.5px;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+      & > textarea:hover {
+        background-color: $veryLightGray;
+      }
+
+      & > textarea:focus {
+        outline: none;
+      }
+    }
+    & > button {
+      background-color: $black;
+      width: 20%;
+      color: $offwhite;
+      font-family: $Mukta;
+      font-size: 1.2rem;
+      margin: 10px;
+      padding: 10px 0px 10px 0px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    & > button:hover {
+      background-color: $darkGray;
+    }
+  }
+}

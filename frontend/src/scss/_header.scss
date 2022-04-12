@@ -52,14 +52,19 @@
   padding: 0px !important;
 }
 .header_social li:hover {
-  color: red;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .header_social li svg {
+  color: $black;
   height: 20px;
   width: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header_social li svg:hover {
+  color: $darkGray;
 }
 
 @media only screen and (max-width: 1244px) {
@@ -151,4 +156,15 @@
   .header_social {
     display: none;
   }
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }

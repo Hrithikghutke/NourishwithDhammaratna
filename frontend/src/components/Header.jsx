@@ -48,12 +48,13 @@ function Header(props) {
           <Link to="/comingsoon">Plans</Link>
         </li>
         <li>
-          <Link to="/comingsoon">Blogs</Link>
+          <Link to="/blogs">Blogs</Link>
         </li>
         <li>
           <Link to="/comingsoon">Login</Link>
         </li>
       </ul>
+
       <ul className="header_social">
         <li>
           <a href="https://instagram.com/nourishwithdhammaratna?utm_medium=copy_link">
@@ -71,6 +72,13 @@ function Header(props) {
           </a>
         </li>
       </ul>
+      <Link className="link" to="/settings">
+        <img
+          className="topImg"
+          src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+        />
+      </Link>
 
       {showicon ? (
         <CgClose onClick={onclick} className="hamburger-icon" />

@@ -46,7 +46,7 @@ function Footer() {
 
           <ul>
             <li>
-              <Link to="/currentlyUnavaliable">Nutritions</Link>
+              <Link to="/blogs">Nutritions</Link>
             </li>
             <li>
               <Link to="/currentlyUnavaliable">Promotions</Link>
