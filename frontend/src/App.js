@@ -19,6 +19,8 @@ import CurrentlyUnavaliable from "./components/CurrentlyUnavaliable";
 import Blog from "./components/Blog/Blog";
 import SinglePost from "./components/Blog/SinglePost";
 import TestimonialImg1 from "./images/testimonials_1.jpeg";
+import Plans from "./components/Plans";
+import Enquiry from "./components/Enquiry";
 function App() {
   return (
     <Router>
@@ -60,6 +62,8 @@ function App() {
         />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/post" element={<SinglePost />} />
+        <Route path="/plans" element={<Plans />} />
+        <Route path="/enquiry" element={<Enquiry />} />
       </Routes>
       <Footer />
     </Router>

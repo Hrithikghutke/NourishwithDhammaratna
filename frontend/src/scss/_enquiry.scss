@@ -1,0 +1,29 @@
+@import "./config";
+
+.e-input {
+  box-shadow: none !important;
+  color: $black !important;
+}
+
+.e-input:focus {
+  outline: none;
+}
+
+.cf-heading-container h2 {
+  font-family: $Mukta;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.select {
+  width: 100%;
+  height: 7vh;
+  border-radius: 6px;
+  color: $gray;
+}
+.dropdown-container {
+  padding: 5px 24px;
+}
+.message-input {
+  box-shadow: none !important;
+  color: $black !important;
+}
