@@ -40,7 +40,7 @@ function Footer() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/comingsoon">Plans</Link>
+              <Link to="/plans">Plans</Link>
             </li>
           </ul>
 
