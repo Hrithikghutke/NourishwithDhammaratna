@@ -21,6 +21,7 @@ import SinglePost from "./components/Blog/SinglePost";
 import TestimonialImg1 from "./images/testimonials_1.jpeg";
 import Write from "./components/Blog/Write";
 import Settings from "./components/Settings";
+
 function App() {
   return (
     <Router>

@@ -25,6 +25,13 @@ $purpleAccent: #836da0;
 $purpleAccentHover: rgb(108, 80, 146);
 $transparentBlack: rgba(12, 12, 12, 0.623);
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
 h1,
 h2,
 h3,

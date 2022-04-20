@@ -52,7 +52,7 @@ function AboutPage() {
           </div>
         </div>
         <div className="col-12 col-md-6 rp-container">
-          <img src={AboutHeroImg} alt="" />
+          <img src={AboutHeroImg} />
         </div>
       </div>
 
@@ -103,7 +103,7 @@ function AboutPage() {
 
       <div className="row about-row">
         <div className="col-12 col-md-6 lp-container">
-          <img className="about-k11-image" src={K11Certificate} alt="" />
+          <img className="about-k11-image" src={K11Certificate} />
         </div>
         <div className="col-12 col-md-6 rp-container">
           <div className="title">
