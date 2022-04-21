@@ -76,8 +76,19 @@ function AboutPage() {
               If you want to loose weight the HEALTHY WAY and Prevent Further
               Weight Gaining Please contact me through provided contact details.
               <br />
-              Get Transform with me #SCIENTIFICALLY & get this benefits
+              Get Transform with me #SCIENTIFICALLY & , <br />
+              <strong>Get this Benefits</strong>
             </p>
+            <ul>
+              <li>Weight Loss</li>
+              <li>Reduce Hairfall</li>
+              <li>Inch Loss</li>
+              <li>Improve Preformance</li>
+              <li>Increase Energy</li>
+              <li>Imporve Metabolism</li>
+              <li>Heal your body inside out</li>
+              <li>Become Healthy and fit</li>
+            </ul>
           </div>
         </div>
       </div>

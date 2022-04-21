@@ -100,6 +100,7 @@
   animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
+  
 }
 
 .hello-container {
@@ -109,6 +110,7 @@
 .hello-img img {
   height: 80vh;
   width: 100%;
+  object-fit: cover;
 }
 
 .hello-content-container {

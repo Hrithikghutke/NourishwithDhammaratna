@@ -1,10 +1,6 @@
 @import "./config";
 
-.newbody {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
+
 
 .header {
   display: flex;
@@ -21,8 +17,8 @@
   font-size: 1.6rem;
 }
 
-.menu-link {
-  display: flex;
+.menu-link ul {
+  display: flex ;
   align-items: center;
   justify-content: center;
 }
@@ -52,93 +48,76 @@
   padding: 0px !important;
 }
 .header_social li:hover {
-  color: red;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .header_social li svg {
+  color: $black;
   height: 20px;
   width: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header_social li svg:hover {
+  color: $darkGray;
 }
 
 @media only screen and (max-width: 1244px) {
   .header {
     justify-content: space-between;
     padding: 0;
+  
+    
   }
 
   .logo-container h2 {
     padding: 30px 30px 30px 30px;
   }
 
-  .menu-link {
+  .menu-link{
     display: none;
   }
 
-  .header ul li a {
-    font-family: $Mukta;
-    padding: 30px;
-    color: $white;
-    font-size: 30px;
-    font-weight: 600;
-  }
-
-  .mobile-menu-link {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .menu-link-expanded{
+    position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    z-index: 100;
     top: 0%;
-    left: 0%;
-    margin: 0;
     flex-direction: column;
-    backdrop-filter: blur(4px);
-    background-color: $transparentBlack;
-    animation-name: fadein;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    z-index: 2;
-    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.89);
+    transform: translate(0%, 0%);
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+        & > li {
+          padding: 20px;
+          & > a{
+            font-family: $Mukta;
+            color: $white;
+            font-size: 30px;
+            font-weight: 600;
+          }
+        }
+    }
+  
   }
 
-  .mobile-menu-link li {
-    padding: 20px;
+  .bm-close{
+    color: $white;
+    position: fixed;
+    right: 0;
+    z-index: 1000 !important;
   }
 
-  .mobile-menu-link li a {
-    padding: 0px !important;
-  }
+
 
   .header_social {
-    display: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-
-  @keyframes fadein {
-    0% {
-      transform: translateX(-500px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
-
-  @keyframes fadeout {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-5000px);
-    }
-  }
-
-  .menu-link li {
-    margin: 20px;
+    display: none !important;
   }
 
   .hamburger-icon {
@@ -147,8 +126,15 @@
     z-index: 2;
     transition: 0.5s ease-in-out;
   }
+}
 
-  .header_social {
-    display: none;
-  }
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }

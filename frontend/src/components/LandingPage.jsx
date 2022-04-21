@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/_landingPage.scss";
+import AboutHeroImg from "../images/AboutHeroImg.png";
 
 function LandingPage(props) {
   return (
@@ -23,7 +24,7 @@ function LandingPage(props) {
       </div>
       <div className="row hello-container">
         <div className="col-md-4 hello-img">
-          <img src={props.Helloimg} alt="img4" />
+          <img src={AboutHeroImg} alt="img4" />
         </div>
         <div className="col-md-8 hello-content">
           <div className="hello-content-container">

@@ -8,18 +8,10 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 function Header(props) {
-  var menuUl = document.getElementById("menu-ul");
-  var body = document.getElementById("body");
-
-  const [showicon, setshowicon] = useState(false);
+  const [show, setshow] = useState(false);
 
   const onclick = () => {
-    setshowicon(!showicon);
-    if (menuUl.classList.contains("menu-link")) {
-      body.classList.add("newbody");
-    } else if (menuUl.classList.contains("mobile-menu-link")) {
-      body.classList.remove("newbody");
-    }
+    setshow(!show);
   };
 
   return (
@@ -29,31 +21,22 @@ function Header(props) {
           .Nourishwith<span>Dhammaratna</span>
         </h2>
       </div>
-
-      <ul id="menu-ul" className={showicon ? "mobile-menu-link" : "menu-link"}>
-        <li>
-          <Link onClick={onclick} to="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link onClick={onclick} to="/about">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/plans">Plans</Link>
-        </li>
-        {/* <li>
-          <Link to="/comingsoon">Blogs</Link>
-        </li>
-        <li>
-          <Link to="/comingsoon">Login</Link>
-        </li> */}
-      </ul>
+      <div className={show ? "menu-link-expanded" : "menu-link"}>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/plans">Plans</Link>
+          </li>
+        </ul>
+      </div>
       <ul className="header_social">
         <li>
           <a href="https://instagram.com/nourishwithdhammaratna?utm_medium=copy_link">
@@ -72,10 +55,10 @@ function Header(props) {
         </li>
       </ul>
 
-      {showicon ? (
-        <CgClose onClick={onclick} className="hamburger-icon" />
+      {show ? (
+        <CgClose onClick={onclick} className="hamburger-icon bm-close" />
       ) : (
-        <CgMenuRightAlt onClick={onclick} className="hamburger-icon" />
+        <CgMenuRightAlt onClick={onclick} className="hamburger-icon " />
       )}
     </div>
   );
