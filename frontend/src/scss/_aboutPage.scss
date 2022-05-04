@@ -98,6 +98,15 @@
   font-family: $Mukta;
   color: $gray;
   padding: 2px 0px 2px 0px;
+  list-style: none;
+}
+
+.about-points-container ul li::before {
+  content: "\f059";
+  font-family: "FontAwesome";
+  float: left;
+  margin-left: -1.5em;
+  color: green;
 }
 
 .about-points2-container {
@@ -122,6 +131,15 @@
   font-family: $Mukta;
   color: $gray;
   padding: 2px 0px 2px 0px;
+  list-style: none;
+}
+
+.about-points2-container ul li::before {
+  content: "\f058";
+  font-family: "FontAwesome";
+  float: left;
+  margin-left: -1.5em;
+  color: green;
 }
 
 .about-points2-container h5 {
@@ -147,6 +165,27 @@
   background-color: $transparentBlack;
   color: $white;
   transition: all 0.3s ease-in-out;
+}
+
+.content{
+  & > ul{
+    
+    padding: 5px 15px 5px 40px;
+    & > li{
+      font-family: $Mukta;
+      color: $gray;
+      padding: 2px 0px 2px 0px;
+      list-style: none;
+      
+    }
+    & > li:before{
+      content: "\f058";
+      font-family: "FontAwesome";
+      float: left;
+      margin-left: -1.5em;
+      color: green;
+    }
+  }
 }
 
 @media only screen and (max-width: 1000px) {

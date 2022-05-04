@@ -1,0 +1,107 @@
+@import "./config";
+
+.login-page{
+    & > :first-child{
+        background-color: aliceblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & > :last-child{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        & > .login-card{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10vh;
+            width: 60%;
+            height: 60vh;
+            & > h3{
+                font-family: $Mukta;
+                text-transform: capitalize;
+                font-weight: 700;
+                
+            }
+            & > form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                & > label{
+                    font-family: $Mukta;
+                    color: $darkGray;
+                    margin-top: 4vh;
+                }
+
+                & > input{
+                  border: none;
+                  border-bottom: 1px solid $gray;
+                  padding: 5px;
+                  
+                }
+
+                & > input:focus{
+                    outline: none;
+                }
+                & > :nth-child(2){
+                    background: url(../images/user-solid.svg) no-repeat scroll 7px 10px;
+                    padding-left:30px;
+                    background-size: 13px;   
+                }
+                & > :nth-child(4){
+                    background: url(../images/key-solid.svg) no-repeat scroll 7px 10px;
+                    padding-left:30px;
+                    background-size: 13px;   
+                }
+
+                & > i{
+                    position: absolute;
+                }
+                & > :last-child{
+                    margin-top: 4vh;
+                    border: none;
+                    color: $white;
+                    background-color: $black;
+                    padding: 5px 0px 5px 0px;
+                    border-radius: 6px;
+                    transition: all 0.3s ease-in-out;
+                }
+                & > :last-child:hover{
+                    background-color: $darkGray;
+                }
+
+
+            }
+            & > .login-socials{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 4vh;
+                & > p{
+                  font-family: $Mukta;
+                  color: $gray;
+                  letter-spacing: 1px;
+                }
+                & > :last-child{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & > a img{
+                        width: 30px;
+                        height: 30px;
+                        padding: 2px;
+                        margin: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

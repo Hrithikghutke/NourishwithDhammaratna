@@ -21,12 +21,17 @@ import SinglePost from "./components/Blog/SinglePost";
 import TestimonialImg1 from "./images/testimonials_1.jpeg";
 import Write from "./components/Blog/Write";
 import Settings from "./components/Settings";
+import Plans from "./components/Plans";
+import Enquiry from "./components/Enquiry";
+import Login from "./components/Login";
 
 function App() {
+  const exclusionArray = ["/login"];
+
   return (
     <Router>
       <Scrollprogressbar />
-      <Header />
+      {exclusionArray.indexOf(window.location.pathname) < 0 && <Header />}
       <Routes>
         <Route
           path="/"
@@ -65,8 +70,12 @@ function App() {
         <Route path="/post" element={<SinglePost />} />
         <Route path="/write" element={<Write />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/plans" element={<Plans />} />
+        <Route path="/enquiry" element={<Enquiry />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />
+
+      {exclusionArray.indexOf(window.location.pathname) < 0 && <Footer />}
     </Router>
   );
 }

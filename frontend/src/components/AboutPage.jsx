@@ -2,6 +2,7 @@ import React from "react";
 import AboutHeroImg from "../images/AboutHeroImg.png";
 import { Link } from "react-router-dom";
 import K11Certificate from "../images/K11 certificate.jpeg";
+import Wlimg from "../images/wl-img.jpg";
 import "../scss/_aboutPage.scss";
 
 function AboutPage() {
@@ -52,7 +53,43 @@ function AboutPage() {
           </div>
         </div>
         <div className="col-12 col-md-6 rp-container">
-          <img src={AboutHeroImg} />
+          <img src={AboutHeroImg} alt="" />
+        </div>
+      </div>
+
+      <div className="row about-row">
+        <div className="col-12 col-md-6 lp-container">
+          <img className="about-k11-image" src={Wlimg} alt="" />
+        </div>
+        <div className="col-12 col-md-6 rp-container">
+          {/* <div className="title">
+            <h1>Certification</h1>
+          </div> */}
+          <div className="content">
+            <p>
+              I have lost 10kg in less than a month. Post delivery. & went from
+              Size xxxl to size M just by eating correct.
+              <span>
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+              <br />
+              If you want to loose weight the HEALTHY WAY and Prevent Further
+              Weight Gaining Please contact me through provided contact details.
+              <br />
+              Get Transform with me #SCIENTIFICALLY & , <br />
+              <strong>Get this Benefits</strong>
+            </p>
+            <ul>
+              <li>Weight Loss</li>
+              <li>Reduce Hairfall</li>
+              <li>Inch Loss</li>
+              <li>Improve Preformance</li>
+              <li>Increase Energy</li>
+              <li>Imporve Metabolism</li>
+              <li>Heal your body inside out</li>
+              <li>Become Healthy and fit</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -95,7 +132,7 @@ function AboutPage() {
           <h5>
             If your answer is YES than our nourish plan is just Best for you
           </h5>
-          <Link to="/comingsoon" className="about-plans-btn">
+          <Link to="/plans" className="about-plans-btn">
             Visit Nourishment Plans
           </Link>
         </div>
@@ -103,7 +140,7 @@ function AboutPage() {
 
       <div className="row about-row">
         <div className="col-12 col-md-6 lp-container">
-          <img className="about-k11-image" src={K11Certificate} />
+          <img className="about-k11-image" src={K11Certificate} alt="" />
         </div>
         <div className="col-12 col-md-6 rp-container">
           <div className="title">
