@@ -46,6 +46,15 @@
         }
       }
 
+      & > p{
+        color: $black;
+        font-family: $Mukta;
+        border: 3px solid $black;
+        padding: 5px 15px 5px 15px;
+        margin: 0px 10px 10px 10px;
+        text-align: center;
+      }
+
       & > .enquire-btn-container {
         & > button {
           border-radius: 6px;
@@ -80,6 +89,10 @@
           font-size: 2rem;
           padding: 10px;
           text-align: center;
+        }
+
+        & > p{
+          font-size: 13px;
         }
 
         & > ul {

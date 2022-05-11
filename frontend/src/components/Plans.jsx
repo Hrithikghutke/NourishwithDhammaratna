@@ -17,6 +17,7 @@ function Plans() {
           <ul>
             <li>Will provide customized diet plan as per goal</li>
           </ul>
+          <p>Starts at &#8377;2999/-</p>
           <Link to="/enquiry" className="enquire-btn-container">
             <button>Enquire Now</button>
           </Link>
@@ -38,6 +39,7 @@ function Plans() {
               without guilt
             </li>
           </ul>
+          <p>Starts at &#8377;15000/-</p>
           <Link to="/enquiry" className="enquire-btn-container">
             <button>Enquire Now</button>
           </Link>
