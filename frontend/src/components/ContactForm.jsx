@@ -77,6 +77,16 @@ function ContactForm(props) {
                   </div>
                 </li>
                 <li>
+                <div className="row">
+                  <div className="col-12 col-md-12 dropdown-container">
+                    <select className="home-contact-select" name="plans" id="plans">
+                      <option value="basic">Basic Nourish Plan</option>
+                      <option value="advance">Advance Nourish Plan</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+                <li>
                   <div className="row">
                     <div className="col-12 col-md-12">
                       <textarea

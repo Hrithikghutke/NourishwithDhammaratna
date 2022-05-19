@@ -22,7 +22,7 @@
   position: absolute;
   z-index: -2;
   padding: 0px;
-  height: 90%;
+  height: 100%;
 }
 .cf-heading-container {
   display: flex;
@@ -51,6 +51,14 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: center;
+}
+
+.home-contact-select{
+  width: 100%;
+    height: 7vh;
+    border-radius: 6px;
+    color: gray;
+    background-color: transparent;
 }
 
 .cf-lp img {
