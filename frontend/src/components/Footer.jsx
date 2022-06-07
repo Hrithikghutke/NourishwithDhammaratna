@@ -7,6 +7,7 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 
 function Footer() {
+  if (window.location.pathname == '/login') return null;
   return (
     <div className="container-fluid footer">
       <div className="row footer-row">

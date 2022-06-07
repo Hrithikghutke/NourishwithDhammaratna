@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import K11Certificate from "../images/K11 certificate.jpeg";
 import Wlimg from "../images/wl-img.jpg";
 import "../scss/_aboutPage.scss";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function AboutPage() {
   return (
+    <>
+    <Header/>
     <div className="container-fluid about-page">
       <div className="row about-row">
         <div className="col-12 col-md-6 lp-container">
@@ -157,6 +161,8 @@ function AboutPage() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

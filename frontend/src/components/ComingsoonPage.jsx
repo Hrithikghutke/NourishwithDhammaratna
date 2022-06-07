@@ -1,8 +1,12 @@
 import React from "react";
 import "../scss/_comingSoon.scss";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function ComingsoonPage() {
   return (
+    <>
+    <Header/>
     <div className="Container-fluid cs-container">
       <h1>Coming Soon!</h1>
       <p>
@@ -10,6 +14,8 @@ function ComingsoonPage() {
         us so you recieve our plans at early stage.
       </p>
     </div>
+    <Footer/>
+    </>
   );
 }
 

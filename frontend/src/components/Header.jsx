@@ -8,12 +8,16 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 function Header(props) {
+
+  const user = false;
+
   const [show, setshow] = useState(false);
 
   const onclick = () => {
     setshow(!show);
   };
-
+  
+  
   return (
     <div className="container-fluid header" style={props.header_color}>
       <div className="logo-container">
@@ -38,8 +42,16 @@ function Header(props) {
           <li>
             <Link to="/blogs">Blogs</Link>
           </li>
+
           <li>
-            <Link to="/login">Login</Link>
+            {
+              user ? (
+
+                <Link to="/login">Logout</Link>
+              ):(
+                <Link to="/login">Login</Link>
+              )
+            }
           </li>
         </ul>
       </div>
@@ -60,13 +72,21 @@ function Header(props) {
           </a>
         </li>
       </ul>
-      <Link className="link" to="/settings">
-        <img
-          className="topImg"
-          src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt=""
-        />
-      </Link>
+
+      {
+        user ? (
+          <Link className="link" to="/settings">
+          <img
+            className="topImg"
+            src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+        </Link>
+        ):(
+          <div></div>
+        )
+      }
+     
 
       {show ? (
         <CgClose onClick={onclick} className="hamburger-icon bm-close" />

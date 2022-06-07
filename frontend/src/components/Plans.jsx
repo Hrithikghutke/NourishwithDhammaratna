@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/_plans.scss";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Plans() {
   return (
+    <>
+    <Header/>
+    
     <div className="plans-container">
       <div className="row">
         <div className="col-6 col-md-6">
@@ -50,6 +55,8 @@ function Plans() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

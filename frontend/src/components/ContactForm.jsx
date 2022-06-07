@@ -2,6 +2,7 @@ import React from "react";
 import "../scss/_contactForm.scss";
 import Emailjs from "emailjs-com";
 
+
 function ContactForm(props) {
   function sendEmail(e) {
     e.preventDefault();
@@ -19,6 +20,7 @@ function ContactForm(props) {
   }
 
   return (
+    
     <div className="container-fluid contact-form-container">
       <div className="row cf-row">
         <div className="cf-heading-container">
@@ -97,6 +99,7 @@ function ContactForm(props) {
         </div>
       </div>
     </div>
+    
   );
 }
 

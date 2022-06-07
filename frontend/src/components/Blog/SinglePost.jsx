@@ -4,9 +4,13 @@ import img from "../../images/cf-backImg.png";
 import { Link } from "react-router-dom";
 import { BiEdit } from "react-icons/bi";
 import { MdOutlineDeleteSweep } from "react-icons/md";
+import Header from "../Header";
+import Footer from "../Footer";
 
 function SinglePost() {
   return (
+    <>
+    <Header/>
     <div className="container-fluid post-container">
       <div className="post-img-container">
         <h2 className="post-title">Post Title</h2>
@@ -87,6 +91,8 @@ function SinglePost() {
         </p>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

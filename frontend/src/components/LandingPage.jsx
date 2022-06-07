@@ -1,9 +1,13 @@
 import React from "react";
 import "../scss/_landingPage.scss";
 import AboutHeroImg from "../images/AboutHeroImg.png";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function LandingPage(props) {
   return (
+    <>
+    <Header/>
     <div className="container landingpage">
       <div className="welcome-container">
         <h2>
@@ -58,6 +62,8 @@ function LandingPage(props) {
         </div>
       </div>
     </div>
+    
+    </>
   );
 }
 

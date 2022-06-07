@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, useHref } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import React from "react";
@@ -24,14 +24,18 @@ import Settings from "./components/Settings";
 import Plans from "./components/Plans";
 import Enquiry from "./components/Enquiry";
 import Login from "./components/Login";
+import Register from "./components/Register";
+import PageNotFound from "./components/PageNotFound";
+import AlreadyLoggedIn from "./components/AlreadyLoggedIn";
 
 function App() {
-  const exclusionArray = ["/login"];
+  const user = false;
+  
 
   return (
     <Router>
       <Scrollprogressbar />
-      {exclusionArray.indexOf(window.location.pathname) < 0 && <Header />}
+       
       <Routes>
         <Route
           path="/"
@@ -56,6 +60,8 @@ function App() {
               backgroundImg={CFbackImg}
               className="cf-heading-lp"
             />,
+
+            <Footer/>
           ]}
         />
         <Route path="/thankyou" element={<ThankyouPage />} />
@@ -67,16 +73,22 @@ function App() {
           element={<CurrentlyUnavaliable />}
         />
         <Route path="/blogs" element={<Blog />} />
+        {/* <Route path="/post/:postId" element={<SinglePost />} /> */}
         <Route path="/post" element={<SinglePost />} />
-        <Route path="/write" element={<Write />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/write" element={user ? <Write /> : <Register/>} />
+        <Route path="/settings" element={user ? <Settings /> : <Register/>} />
         <Route path="/plans" element={<Plans />} />
         <Route path="/enquiry" element={<Enquiry />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={user ? <AlreadyLoggedIn/>:<Login />} />
+        <Route path="/register" element={user ? <AlreadyLoggedIn/>:<Register />} />
+        <Route path="*" element={<PageNotFound />} />
+        
       </Routes>
-
-      {exclusionArray.indexOf(window.location.pathname) < 0 && <Footer />}
+     
+       
+      
     </Router>
+    
   );
 }
 

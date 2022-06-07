@@ -1,6 +1,8 @@
 import React from "react";
 import Emailjs from "emailjs-com";
 import "../scss/_enquiry.scss";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Enquiry(props) {
   function sendEmail(e) {
@@ -18,6 +20,8 @@ function Enquiry(props) {
       .catch((err) => console.log(err));
   }
   return (
+    <>
+    <Header/>
     <div className="container-fluid enquiry-form-container">
       <div className="row cf-row">
         <div className="cf-heading-container">
@@ -36,7 +40,7 @@ function Enquiry(props) {
                       name="name"
                       placeholder="Name"
                       required
-                    />
+                      />
                   </div>
                   <div className="col-6 col-md-6">
                     <input
@@ -45,7 +49,7 @@ function Enquiry(props) {
                       name="surname"
                       placeholder="Surname"
                       required
-                    />
+                      />
                   </div>
                 </div>
               </li>
@@ -58,7 +62,7 @@ function Enquiry(props) {
                       name="email"
                       placeholder="Email"
                       required
-                    />
+                      />
                   </div>
                   <div className="col-6 col-md-6">
                     <input
@@ -66,7 +70,7 @@ function Enquiry(props) {
                       type="tel"
                       name="contact-number"
                       placeholder="Phone"
-                    />
+                      />
                   </div>
                 </div>
               </li>
@@ -87,7 +91,7 @@ function Enquiry(props) {
                       name="message"
                       className="e-message-input"
                       placeholder="Message"
-                    ></textarea>
+                      ></textarea>
                   </div>
                 </div>
               </li>
@@ -99,6 +103,8 @@ function Enquiry(props) {
         </form>
       </div>
     </div>
+    <Footer/>
+   </>
   );
 }
 

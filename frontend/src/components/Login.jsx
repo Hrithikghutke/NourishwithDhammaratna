@@ -3,12 +3,24 @@ import "../scss/_login.scss";
 import Whatsapp from "../images/whatsapp.png";
 import Instagram from "../images/instagram.png";
 import Facebook from "../images/facebook.png";
+import LoginBackground from "../images/login-img.jpg";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
     <div className="row login-page">
       <div className="col-12 col-md-6">
-        <h1>Image</h1>
+        <div>
+          <h3>Welcome to .</h3>
+          <h4>NourishWithDhammaratna</h4>
+          <div className="scroll-container">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+          </div>
+          {/* <p>Stay Fit Stay Healthy</p> */}
+        </div>
+
+        <img src={LoginBackground} alt="image" />
       </div>
       <div className="col-12 col-md-6 login-card-container">
         <div className="container login-card">
@@ -34,6 +46,10 @@ function Login() {
               </a>
             </div>
           </div>
+          <p>
+            Don't Have Account? &nbsp;
+            <Link to="/register">Register Now</Link>
+          </p>
         </div>
       </div>
     </div>

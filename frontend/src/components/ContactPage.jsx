@@ -4,9 +4,14 @@ import TTPImg from "../images/TTP.png";
 import { RiWhatsappLine } from "react-icons/ri";
 import { RiMailLine } from "react-icons/ri";
 import "../scss/_contactPage.scss";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function ContactPage() {
   return (
+    <>
+    <Header/>
+   
     <div>
       <ContactForm
         heading_color={{ color: "gray" }}
@@ -35,6 +40,8 @@ function ContactPage() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

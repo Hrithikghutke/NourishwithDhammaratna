@@ -1,9 +1,15 @@
 import React from "react";
 import "../scss/_settings.scss";
 import { FcAddImage } from "react-icons/fc";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Settings() {
   return (
+    <>
+    <Header/>
+   
+    
     <div className="container-fluid settings-container">
       <h1>
         Update <span>Settings</span>
@@ -39,6 +45,8 @@ function Settings() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
