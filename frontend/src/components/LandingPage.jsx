@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../scss/_landingPage.scss";
 import AboutHeroImg from "../images/AboutHeroImg.png";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 function LandingPage(props) {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="container landingpage">
       <div className="welcome-container">
@@ -11,20 +22,22 @@ function LandingPage(props) {
         </h2>
         <p>Perfect place for peoples who wants to stay healthy and fit.</p>
       </div>
-      <div className="row hero-image-container">
-        <div className="col-12 col-md-4 hero-img1">
-          <img src={props.Heroimg1} alt="img1" />
+      <Parallax>
+        <div className="row hero-image-container">
+          <div className="col-12 col-md-4 hero-img1">
+            <img src={props.Heroimg1} alt="img1" />
+          </div>
+          <div className="col-md-4 hero-img2">
+            <img src={props.Heroimg2} alt="img2" />
+          </div>
+          <div className="col-md-4 hero-img3">
+            <img src={props.Heroimg3} alt="img3" />
+          </div>
         </div>
-        <div className="col-md-4 hero-img2">
-          <img src={props.Heroimg2} alt="img2" />
-        </div>
-        <div className="col-md-4 hero-img3">
-          <img src={props.Heroimg3} alt="img3" />
-        </div>
-      </div>
+      </Parallax>
       <div className="row hello-container">
-        <div className="col-md-4 hello-img">
-          <img src={AboutHeroImg} alt="img4" />
+        <div className="col-md-4 hello-img"  >
+           <img src={AboutHeroImg} alt="img" /> 
         </div>
         <div className="col-md-8 hello-content">
           <div className="hello-content-container">

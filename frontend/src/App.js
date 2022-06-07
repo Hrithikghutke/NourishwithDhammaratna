@@ -21,11 +21,14 @@ import SinglePost from "./components/Blog/SinglePost";
 import TestimonialImg1 from "./images/testimonials_1.jpeg";
 import Plans from "./components/Plans";
 import Enquiry from "./components/Enquiry";
+import Transformation from "./components/Transformation";
+import { ParallaxProvider } from 'react-scroll-parallax';
 function App() {
   return (
     <Router>
       <Scrollprogressbar />
       <Header />
+      <ParallaxProvider>
       <Routes>
         <Route
           path="/"
@@ -36,6 +39,7 @@ function App() {
               Heroimg3="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=853&q=80"
               Helloimg="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
             />,
+            <Transformation/>,
             <Testimonials
               timg1={TestimonialImg1}
               timg2="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
@@ -65,6 +69,7 @@ function App() {
         <Route path="/plans" element={<Plans />} />
         <Route path="/enquiry" element={<Enquiry />} />
       </Routes>
+      </ParallaxProvider>
       <Footer />
     </Router>
   );

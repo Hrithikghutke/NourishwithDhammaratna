@@ -1,0 +1,141 @@
+@import "./config";
+
+.Transformation{
+    
+    padding: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/clients__background.png);
+    
+    & > &__heading{
+        border: 2px solid $darkGray;
+        padding: 10px;
+        width: 40%;
+        background-color: $white;
+        & > h1,p{
+            font-family: $Mukta;
+            text-align: center;
+              
+        }
+        &>h1{
+            color: $darkGray; 
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        & > p{
+            color : $gray;
+        }
+    }
+   
+   
+
+    & > .row{
+        padding: 10vh;
+        & > .img {
+            & > img{
+                height: 50vh;
+            }
+            
+        }
+        & > .feedback{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            padding: 30px 60px 30px 60px;
+            background-color: $white;
+
+            & > h2,p{
+                font-family: $Roboto;
+                padding: 5px;
+                color: $gray;
+            }
+            & > h2{
+              font-size: 2rem;
+              font-weight: 700;
+              color: $darkGray;
+            }
+
+            & > p{
+                text-align: left;
+                & > button{
+                    margin: 10px 0px 10px 0px;
+                    padding: 5px 20px 5px 20px;
+                    font-family: $Mukta;
+                    background: transparent;
+                    transition: all 0.3s ease-in-out;
+                    color: $gray;
+                    border:  2px solid $gray;
+                }
+                & > button:hover{
+                    color: $white;
+                    background: $transparentBlack;
+                }
+            }
+            
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1244px) {
+
+
+    .Transformation{
+
+        padding: 4vh;
+        & > &__heading{
+            width: 100%;
+            &>h1{
+                font-size: 2rem;
+            }
+            &>p{
+                font-size: 0.8rem;
+            }
+        }
+   
+        & > .row{
+            padding: 0px;
+            margin-top: 4vh;
+            
+            & > .img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & > img{
+                    height: 30vh;
+                    margin-bottom: 20px;
+                }
+                
+            }
+            & > .feedback{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                padding: 30px 30px 30px 30px;
+                width: 100%;
+                
+    
+                & > h2,p{
+                    font-family: $Mukta;
+                    padding: 5px;
+                }
+                & > h2{
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                }
+                & > P{
+                    font-family: $Roboto;
+                    color: $gray;
+                    font-size: 15px;
+    
+    
+                }
+    
+                
+                
+            }
+        }
+    
+    }
+
+}

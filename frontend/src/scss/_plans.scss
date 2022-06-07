@@ -26,10 +26,32 @@
         font-family: "Lobster";
         font-size: 3rem;
         padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        
+        & > span{
+          color: $black;
+        font-family: $Mukta;
+          font-size: 20px;
+        }
       }
 
       & > ul {
         margin: 0em 0em 1em 0em;
+       
+        & > h4{
+          font-family: $Roboto;
+        font-size: 1.3rem;
+        padding: 20px 0px 10px 0px;
+        }
+        & > h4::before{
+          content: "\f550";
+          font-family: "FontAwesome";
+          float: left;
+          margin-left: -1.5em;
+          color: $black;
+        }
+
 
         & > li {
           padding: 0;
@@ -86,9 +108,15 @@
         padding: 10px;
         & > h1 {
           font-family: "Lobster";
-          font-size: 2rem;
+          font-size: 1.5rem;
           padding: 10px;
           text-align: center;
+          margin-bottom: 0px;
+          & > span{
+            color: $black;
+          font-family: $Mukta;
+            font-size: 12px;
+          }
         }
 
         & > p{
@@ -98,6 +126,21 @@
         & > ul {
           margin: 0em 0em 1em 0em;
           padding: 10px;
+
+          & > h4{
+            font-family: $Roboto;
+          font-size: 1rem;
+          padding: 20px 0px 10px 30px;
+          
+          }
+          & > h4::before{
+            content: "\f550";
+            font-family: "FontAwesome";
+            float: left;
+
+            margin-left: -1.5em;
+            color: $black;
+          }
 
           & > li {
             font-size: 13px;

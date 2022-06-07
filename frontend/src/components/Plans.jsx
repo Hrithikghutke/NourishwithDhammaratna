@@ -13,11 +13,21 @@ function Plans() {
           />
         </div>
         <div className="col-6 col-md-6">
-          <h1>Basic Nourish Plan</h1>
+          <h1>Basic Nourish Plan <br />
+          <span>(Heal Your Gut Program)</span>
+          </h1>
           <ul>
+            <li>15 Days Plan.</li>
             <li>Will provide customized diet plan as per goal</li>
+            <h4>Benefits</h4>
+            <li>Decrease Inflamation</li>
+            <li>Increase Energy</li>
+            <li>Clear Skin</li>
+            <li>Reduce Acidity</li>
+            <li>Relief from Constipation</li>
+            <li>Relif from gases / bloating</li>
           </ul>
-          <p>Starts at &#8377;2999/-</p>
+          <p>Starts at &#8377;3000/-</p>
           <Link to="/enquiry" className="enquire-btn-container">
             <button>Enquire Now</button>
           </Link>
@@ -27,6 +37,7 @@ function Plans() {
         <div className="col-6 col-md-6">
           <h1>Advance Nourish Plan</h1>
           <ul>
+            <li>5 Months Duration</li>
             <li>Customized diet plan</li>
             <li>Nutrition Counseling</li>
             <li>Weekly follow up</li>
