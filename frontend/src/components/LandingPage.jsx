@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../scss/_landingPage.scss";
 import AboutHeroImg from "../images/AboutHeroImg.png";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import Transformation from "./Transformation";
+import Testimonials from "./Testimonials";
+import featureimg from "../images/Feature-img-1.jpeg"
+import featureaudio from "../images/Feature-audio-1.mpeg"
 
 function LandingPage(props) {
   const [offsetY, setOffsetY] = useState(0);
@@ -70,6 +74,22 @@ function LandingPage(props) {
           </div>
         </div>
       </div>
+      <Transformation/>,
+
+      <div className="featured-section">
+        <h1>Featured On Akashwani Aurangabad</h1>
+        <div className="row">
+          <div className="col-12 col-md-6">
+            <img src={featureimg}  alt="img" />
+          </div>
+          <div className="col-12 col-md-6">
+            <audio controls>
+              <source src={featureaudio} type="audio/mpeg"/>
+              </audio> 
+              <p>Listen to full Interview</p>
+          </div>
+        </div>
+      </div>    
     </div>
   );
 }

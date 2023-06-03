@@ -143,6 +143,49 @@
   opacity: 0;
 }
 
+
+
+.featured-section{
+  &>h1{
+    font-family: $Mukta;
+    font-weight: 800;
+    color: #4b4b4b;
+    font-size: 45px;
+    margin-bottom: 3px;
+  }
+ /*row*/ &>div{
+    
+    padding: 20px;
+
+    &>div{
+      &>img{
+        width: 50vh;
+      }
+      
+    }
+    &>div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+        &>p{
+          padding: 10px;
+          font-family: $Roboto;
+          font-weight: 600;
+        }
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1000px) {
   .hero-img1,
   .hero-img2,
@@ -181,5 +224,13 @@
 
   .hello-content-container {
     padding: 60px 20px 60px 20px;
+  }
+
+  .featured-section{
+    &>h1{
+      
+      font-size: 40px;
+      
+    }
   }
 }
